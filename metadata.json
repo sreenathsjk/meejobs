@@ -1,0 +1,6 @@
+{
+  "name": "MeeJobs",
+  "description": "Hyperlocal job listing platform for small businesses and job seekers in Indian Tier 2/3 cities, with WhatsApp links, SEO, Razorpay simulation, and AI job descriptions.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  /* Retheming Indigo variables to the precise MeeJobs Orange brand colors for app-wide consistency */
+  --color-indigo-50: #fffbf7;
+  --color-indigo-100: #ffebd5;
+  --color-indigo-200: #ffd7b0;
+  --color-indigo-300: #ffb87d;
+  --color-indigo-400: #ffa052;
+  --color-indigo-500: #ff7a00; /* Primary brand orange */
+  --color-indigo-600: #ea5b00; /* Darker vibrant hover orange */
+  --color-indigo-700: #d44000; /* Deep brick contrast */
+  --color-indigo-800: #9e2a00;
+  --color-indigo-900: #6e1c00;
+  --color-indigo-950: #1d0700;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased font-sans;
+  }
+}
+
+/* Custom glowing and micro-interaction classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.glow-pill {
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.15);
+}
